@@ -3,7 +3,6 @@ using FactoryMethod;
 
 Console.WriteLine("Hello, World!");
 OfficeApp app = new PPTApp();
-
 app.NewDocument();
 
 app = new WordApp();
