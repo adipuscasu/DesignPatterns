@@ -1,6 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-using AbstractFactory;
+﻿using FactoryMethod;
 
-Console.WriteLine("Hello, World!");
-
-
+namespace AbstractFactory
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           var point = Point.NewPolarPoint(1.0, Math.PI / 2);
+        }
+    }
+}

@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             PersonJobBuilder pb = new();
-            pb.Called("Dmitri").WorksAsA("Quant").Build();
+            //pb.Called("Dmitri").WorksAsA("Quant").Build();
         }
     }
 }

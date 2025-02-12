@@ -9,6 +9,4 @@ namespace InterfaceSegragationPrinciple.Models
             throw new NotImplementedException();
         }
     }
-    {
-    }
 }

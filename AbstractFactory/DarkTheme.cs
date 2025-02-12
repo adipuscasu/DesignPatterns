@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
-    public abstract class Scrollbar
+    public class DarkTheme : ITheme
     {
-        public abstract void SetLocation(int x);
+        public string TextColor => "white";
+
+        ;public string BackgroundColor => "dark gray";
     }
 }

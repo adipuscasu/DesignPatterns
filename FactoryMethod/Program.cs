@@ -1,12 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-using FactoryMethod;
+﻿namespace FactoryMethod
+{
+    internal class Program
+    {
+        static async void Main(string[] args)
+        {
+            var point = PointFactory.NewPolarPoint(1.0, Math.PI / 2);
+            Console.WriteLine(point);
 
-Console.WriteLine("Hello, World!");
-OfficeApp app = new PPTApp();
-app.NewDocument();
+            var foo = await Foo.CreateAsync();
 
-app = new WordApp();
-app.NewDocument();
-
-app = new ExcelApp();
-app.NewDocument();
+        }
+    }
+}

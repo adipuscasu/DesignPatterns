@@ -8,8 +8,6 @@ namespace FluentBuilderInheritance
 {
     public class Builder
     {
-        public class Builder
-        {
-        }
+
     }
 }

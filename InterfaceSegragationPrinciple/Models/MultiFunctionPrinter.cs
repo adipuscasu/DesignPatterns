@@ -9,6 +9,11 @@ namespace InterfaceSegragationPrinciple.Models
             Console.WriteLine($"Faxing {d.ToString}");
         }
 
+        public void Fax(System.Reflection.Metadata.Document d)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Print(Document d)
         {
             Console.WriteLine($"Printing {d}");

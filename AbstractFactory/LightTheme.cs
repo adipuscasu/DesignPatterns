@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
-    internal class DesktopWindow : MyWindow
+    public class LightTheme: ITheme
     {
-        public override void OpenWindow()
-        {
-            Console.WriteLine("Open Desktop Window");
-        }
+        public string TextColor => "Black";
+        public string BackgroundColor => "White";
     }
 }

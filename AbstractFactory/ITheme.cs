@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
-    internal class MotiffApp
+    internal interface ITheme
     {
+        string TextColor { get; }
+        string BackgroundColor { get; }
     }
 }
