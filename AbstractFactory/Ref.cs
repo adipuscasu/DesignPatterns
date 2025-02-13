@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
-    public class DarkTheme : ITheme
+    internal class Ref<T> where T: class
     {
-        public string TextColor => "white";
-
-        public string BackgroundColor => "dark gray";
+        public T Value { get; set; }
+        public Ref(T value)
+        {
+            Value = value;
+        }
     }
 }

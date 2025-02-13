@@ -4,7 +4,7 @@ namespace AbstractFactory
 {
     internal class TrackingThemeFactory
     {
-        private readonly List<WeakReference<ITheme>> _themes;
+        private readonly List<WeakReference<ITheme>> _themes = [];
         public ITheme CreateTheme(bool dark)
         {
             ITheme theme = dark ? new DarkTheme() : new LightTheme();
